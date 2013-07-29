@@ -13,42 +13,40 @@ sentence numbers in which each occurrence appeared." -- From http://bit.ly/13pZg
 For example, this is a concordance of the above text:
 
 ```
-alphabetical          {1}
-program               {1}
-in                    {2}
-"given                {1}
-bonus                 {1}
-document              {1}
-generate              {1}
-all                   {1}
-occurrences           {1}
-label                 {1}
 a                     {2}
-text                  {1}
+all                   {1}
+alphabetical          {1}
+an                    {2}
+appeared              {1}
+arbitrary             {1}
+bonus                 {1}
+concordance           {1}
+document              {1}
 each                  {2}
 english               {1}
-arbitrary             {1}
-concordance           {1}
+frequencies           {1}
+generate              {1}
+given                 {1}
 i                     {1}
-that                  {1}
+in                    {2}
+label                 {1}
+labeled               {1}
+list                  {1}
 numbers               {1}
 occurrence            {1}
-appeared."            {1}
-labeled               {1}
-will                  {1}
-written               {1}
-with                  {2}
-from                  {1}
+occurrences           {1}
+of                    {1}
+program               {1}
+sentence              {1}
+text                  {1}
+that                  {1}
+the                   {1}
 which                 {1}
-an                    {2}
---                    {1}
+will                  {1}
+with                  {2}
 word                  {3}
 write                 {1}
-of                    {1}
-sentence              {1}
-frequencies           {1}
-list                  {1}
-the                   {1}
+written               {1}
 ```
  
 __To run this example__
