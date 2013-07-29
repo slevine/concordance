@@ -21,14 +21,14 @@ object Concordance extends App {
       else if (s.startsWith(p.head.toString)) innerFilter(s.substring(1, s.length), p.tail)
       else innerFilter(s, p.tail)
 
-    innerFilter(s, List('!', '.', ',', ';', ')', '(', ':','"'))
+    innerFilter(s, List('!', '.', ',', ';', ')', '(', ':'))
   }
 
   val lines = (Source fromFile file getLines () map (l ⇒ l.split(" "))).toList
 
   val wordCounts = lines.flatten.filterNot(isWhiteSpace).map(filterPunctuation).groupBy(x ⇒ x.toLowerCase)
 
-  for (key <- wordCounts.keys) {
+  for (key <- wordCounts.keys.toList.sortWith(_ < _)) {
     val pad = " " * (20 - key.length)
     println(s"$key $pad {${wordCounts(key).size}}")
   }
