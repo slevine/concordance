@@ -25,6 +25,6 @@ object MapMerge {
       case x :: xs ⇒ combine(x) ++ innerMerge(xs)
     }
 
-    innerMerge((m1.keys ++ m2.keys) toList)
+    innerMerge((m1.keys ++ m2.keys).toList)
   }
 }
