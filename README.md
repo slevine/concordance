@@ -1,15 +1,11 @@
-### Interview Problems
+### Interview Problem
 
-- Given two immutable maps of String to AnyRef, do an arbitrarily deep merge. The rules are:
-    - If Map1 and Map2 both declare a key "foo" and for both the key "foo" is another Map, then merge the Maps in both the parent Maps. 
-        This merge should be recursive.
-    - If for both the key "foo" is a List, concatenate those Lists. 
-    - If for both the key "foo" is a String, concatenate those Strings using a semicolon separator.
-    - In all other cases where both Map1 and Map2 have the same key, the value at that key in Map1 takes precedence.
+**Given**
+- CSV a list of expenses in the following format `2014-01-01,Category,Description,Amount`
+- CSV a list of invoices in the following format `2014-01-01,2014-01-01,ID,Client,Description,Amount`
 
-- Implement http://projecteuler.net/problem=4 as efficiently as possible and expect larger numbers.
+**Code**
+- Simple `CSV -> Case Class` Converter
+- Simple class to save the data to a relational Database
 
-### To run:
-- `$tar -zxf interview-problems.tgz`
-- `$cd interview-problems`
-- `$sbt test`
+
